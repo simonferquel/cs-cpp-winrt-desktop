@@ -1,3 +1,5 @@
 .vs/
 obj/
 packages/
+Debug/
+Generated Files/

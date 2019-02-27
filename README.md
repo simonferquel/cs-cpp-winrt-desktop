@@ -19,3 +19,12 @@ This Readme file contains step by step instructions. One step equals one commit 
 I use Visual Studio 2019 preview for this sample, but the same should work with 2017.
 To make things easier (in particular get nice Visual Studio project templates for C++/winrt), please install C++/Winrt extension for Visual Studio: https://marketplace.visualstudio.com/items?itemName=CppWinRTTeam.cppwinrt101804264
 Then create a solution with both a C# Console project and a C++/Winrt library. 
+
+### 2. Modify project defaults
+
+Multiple things here:
+- Set proper Target platforms (C#/C++ interop requires everything to be either x86 or x64 explicitly. We need to drop the AnyCPU configuration then). For simplicity we'll just support x64 in this project.
+- Set a common OutputDir for both projects (making it easier for debugging)
+- Make the C++/WinRT project build against the desktop C runtime (by setting `AppContainerApplication` property to false)
+- Remove the auto-generated activation factory from the C++/WinRT project
+- Enable WinRT support in the C# program
