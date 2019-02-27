@@ -12,12 +12,12 @@
   <ItemGroup>
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="Class.cpp" />
+    <ClCompile Include="ExampleComponent.cpp" />
+    <ClCompile Include="NativeFactory.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Midl Include="Class.idl" />
+    <ClInclude Include="ExampleComponent.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="CppComponents.def" />
@@ -25,5 +25,8 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="ExampleComponent.idl" />
   </ItemGroup>
 </Project>

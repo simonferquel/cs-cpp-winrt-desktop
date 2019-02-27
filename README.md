@@ -28,3 +28,9 @@ Multiple things here:
 - Make the C++/WinRT project build against the desktop C runtime (by setting `AppContainerApplication` property to false)
 - Remove the auto-generated activation factory from the C++/WinRT project
 - Enable WinRT support in the C# program
+
+### 3. Implement a C++ WinRT component and a P/Invokable factory
+
+- Create an idl file to describe the winrt component
+- Implement it like any c++/winrt compoment
+- Add a P/Invokable factory returning an IUnknown pointer (and export it using the project .def file)

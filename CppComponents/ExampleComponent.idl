@@ -1,0 +1,10 @@
+namespace CppComponents
+{
+	[default_interface]
+	runtimeclass ExampleComponent
+	{
+		ExampleComponent();
+		Int32 SomeProperty;
+		Windows.Foundation.IAsyncOperation<Int32> Fact(Int32 value);
+	}
+}
