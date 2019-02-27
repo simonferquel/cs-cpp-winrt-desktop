@@ -12,3 +12,10 @@ This repository exposes a way to bypass the default "activation" logic, using P/
 
 This Readme file contains step by step instructions. One step equals one commit in the repo. So to follow code changes associated with each step, just navigate github and explore the corresponding commit.
 
+## Step by Step instructions
+
+### 1. Create a solution with a C# Console project + C++/winrt dll
+
+I use Visual Studio 2019 preview for this sample, but the same should work with 2017.
+To make things easier (in particular get nice Visual Studio project templates for C++/winrt), please install C++/Winrt extension for Visual Studio: https://marketplace.visualstudio.com/items?itemName=CppWinRTTeam.cppwinrt101804264
+Then create a solution with both a C# Console project and a C++/Winrt library. 
