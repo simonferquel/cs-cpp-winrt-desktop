@@ -9,6 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopApp", "DesktopApp\DesktopApp.csproj", "{AEBC5F0F-8457-4F1C-A47A-886E1741C7D0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{50EAC82F-4549-4100-AC2B-8B2FB9AB31BD} = {50EAC82F-4549-4100-AC2B-8B2FB9AB31BD}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppComponents", "CppComponents\CppComponents.vcxproj", "{50EAC82F-4549-4100-AC2B-8B2FB9AB31BD}"
 EndProject

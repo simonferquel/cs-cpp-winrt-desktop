@@ -34,3 +34,13 @@ Multiple things here:
 - Create an idl file to describe the winrt component
 - Implement it like any c++/winrt compoment
 - Add a P/Invokable factory returning an IUnknown pointer (and export it using the project .def file)
+
+### 4. Consuming the component in C#
+
+- Setup a DllImport for P/Invoking the native factory
+- Use Marshal.GetUniqueObjectForIUnknown to get a RCW wrapper for the returned COM object
+- Cast it to the concrete WinRT interface/runtime class
+- You are done!
+
+To make things easier, you can create a WinRT component that exposes constructors for every other component you want to expose, and create a native factory only for this root object.
+Happy coding !
